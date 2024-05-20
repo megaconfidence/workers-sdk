@@ -1,5 +1,17 @@
 # wrangler
 
+## 3.57.1
+
+### Patch Changes
+
+- [#5862](https://github.com/cloudflare/workers-sdk/pull/5862) [`441a05f`](https://github.com/cloudflare/workers-sdk/commit/441a05f4df10e73405a23031cd6a20073d0e15e6) Thanks [@CarmenPopoviciu](https://github.com/CarmenPopoviciu)! - fix: `wrangler pages deploy` should fail if deployment was unsuccessful
+
+  If a Pages project fails to deploy, `wrangler pages deploy` will log
+  an error message, but exit successfully. It should instead throw a
+  `FatalError`.
+
+- [#5626](https://github.com/cloudflare/workers-sdk/pull/5626) [`a12b031`](https://github.com/cloudflare/workers-sdk/commit/a12b031e4157728e9b6e70667c16481fa32f401e) Thanks [@RamIdeas](https://github.com/RamIdeas)! - chore: ignore workerd output (error: CODE_MOVED) not intended for end-user devs
+
 ## 3.57.0
 
 ### Minor Changes
